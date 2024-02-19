@@ -5,46 +5,65 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: rgb(157, 182, 159);
-            color: #fff;
-            padding: 10px 20px;
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(157, 182, 159); 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            z-index: 1000; 
+            transition: top 0.3s; 
+        }
+        
+        .contain {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 20px; 
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        nav ul {
+        
+        .logo {
+            flex: 0 0 auto; 
+        }
+        
+        .logo img {
+            max-width: 200px; 
+            height: auto;
+        }
+        
+        #navMenu {
+            flex: 1; 
+            text-align: right; 
+        }
+        
+        #navMenu ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
-        nav ul li {
+        
+        #navMenu ul li {
             display: inline-block;
-            margin-right: 20px;
+            margin-left: 20px; 
         }
-        nav ul li:hover ul {
-            display: block;
+        
+        #navMenu ul li:first-child {
+            margin-left: 0;
         }
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            background-color: #555;
-            padding: 10px;
-            border: 1px solid #777;
+        
+        #navMenu ul li a :hover{
+            text-decoration: aqua;
+            
         }
-        nav ul li ul li {
-            display: block;
+        
+        
+        main {
+            margin-top: 70px; 
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-        nav ul li:hover > ul {
-            display: block;
-        }
-        .logo img {
-            height: 100px; /* Adjust height as needed */
-        }
+        
 
         /* Responsive styles */
         @media screen and (max-width: 600px) {

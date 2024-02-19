@@ -1,13 +1,13 @@
 // JavaScript for home section
 document.getElementById('learnMoreBtn').addEventListener('click', function() {
-    // Replace this with the action you want to perform when the button is clicked
+    
     alert('You clicked the Learn More button!');
 });
 
 // JavaScript for contact form submission (example)
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    // Here you can add code to handle form submission, such as sending data to a server or displaying a success message
+    
     alert('Thank you for sending message and your Form submitted successfully!..we will get back to you.');
 });
 
@@ -25,5 +25,21 @@ function showPage(pageId) {
     var selectedPage = document.getElementById(pageId);
     selectedPage.style.display = 'block';
 }
+
+//  header fixed  to header when scrolling
+window.addEventListener('scroll', function() {
+    var header = document.getElementById('header');
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollPosition > 100) { // Adjust the scroll position threshold as needed
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+});
+
+
+
+
 
 
