@@ -38,6 +38,37 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// document.getElementById('navToggle').addEventListener('click', function() {
+//     var nav = document.getElementById('navMenu');
+//     if (nav.style.display === 'block') {
+//         nav.style.display = 'none';
+//     } else {
+//         nav.style.display = 'block';
+//     }
+// });
+
+// document.getElementById('navToggle').addEventListener('click', function() {
+//     var nav = document.getElementById('navMenu');
+//     if (nav.style.display === 'block') {
+//         nav.style.display = 'none';
+//         this.textContent = 'Menu'; // Change text to 'Menu' when closing
+//     } else {
+//         nav.style.display = 'block';
+//         this.textContent = 'X'; // Change text to 'X' when opening
+//     }
+// });
+
+document.getElementById('navToggle').addEventListener('click', function() {
+    var nav = document.getElementById('navMenu');
+    if (nav.style.display === 'block') {
+        nav.style.display = 'none';
+        this.innerHTML = '☰'; // Change to menu icon
+    } else {
+        nav.style.display = 'block';
+        this.innerHTML = 'X'; // Change to 'X' icon
+    }
+});
+
 
 
 
