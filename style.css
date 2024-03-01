@@ -105,19 +105,64 @@
     margin-bottom: 40px;
 }
 
-#learnMoreBtn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+ 
 
-#learnMoreBtn:hover {
-    background-color: #0056b3;
-}
+/* button */
+button {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #92cde9, #e980bc, #ddd695, #88c7e4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+  }
+  
+  button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #0beca9, #ebae08, #f0e9ad, #abd2e4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  }
+  
+  button:hover::before {
+    filter: blur(20px);
+  }
+  
+  button:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+  
 
 /* Service page styles */
 #services {
@@ -146,18 +191,22 @@
     margin-bottom: 20px;
 }
 
+
+
 .service .btn {
-    background-color: #007bff;
+
+    background-color: #13ebce;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 1em;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .service .btn:hover {
-    background-color: #0056b3;
+    background-color: #23e976;
 }
 
 /* Portfolio section styles */
@@ -197,8 +246,8 @@
     margin-bottom: 20px;
 }
 
-.portfolio-item .btn {
-    background-color: #007bff;
+.portfolio-item.card.btn {
+    background-color: #0de7b8;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -207,8 +256,8 @@
     transition: background-color 0.3s ease;
 }
 
-.portfolio-item .btn:hover {
-    background-color: #0056b3;
+.portfolio-item.card.btn:hover {
+    background-color: #0aec96;
 }
 
 /* Company section styles */
@@ -288,7 +337,7 @@
 }
 
 .resource .btn {
-    background-color: #007bff;
+    background-color: #16dfad;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -298,7 +347,7 @@
 }
 
 .resource .btn:hover {
-    background-color: #0056b3;
+    background-color: #0fe762;
 }
 
 /* Contact section styles */
@@ -350,7 +399,9 @@
 
 .btn:hover {
     background-color: #0056b3;
-}
+} 
+
+   
 
 /* project page */
 #projects {
@@ -417,11 +468,22 @@ footer {
     background-color: rgb(157, 182, 159);
     color: #fff;
     padding: 30px 0;
+    
 }
 
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    
+   
+    
+}
 .container {
     width: 80%;
     margin: 0 auto;
+  
 }
 
 nav ul {
@@ -589,6 +651,15 @@ nav ul li a:hover {
     font-size: 1rem;
     margin-bottom: 10px; /* Adjust as needed */
   }
+  .card.btn {
+    background-color: #0de7b8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
   
   .card:before {
     content: '';
@@ -596,7 +667,7 @@ nav ul li a:hover {
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: linear-gradient(135deg, #364a60, #384c6c);
+    background: linear-gradient(135deg, #a6b5c5, #b4ebd1);
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -620,5 +691,68 @@ nav ul li a:hover {
   }
   
   
+.cards {
+    perspective: 500px;
+  }
+  
+  .card {
+    width: 200px;
+    height: 370px;
+    background: #e2eaec;
+    border: 2px solid #e2eaec;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+  .card:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  }
+  
+  .card_title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    font: 700 1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  
+  .card:hover .card_title {
+    transform: translateZ(50px);
+  }
 
-
+  /* resources */
+  .resources {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+   
+    justify-content:space-evenly;
+  }
+  
+  .resource {
+    width: 200px;
+    height: 200px;
+    background: #bee7ce;
+    border: 2px solid #93ecc7;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+   .resource:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  } 
+  
+  
