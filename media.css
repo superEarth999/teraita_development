@@ -74,3 +74,33 @@
     }
   }
   
+
+  /* portfolio */
+/* CSS for desktop/tablet screens */
+.page-section {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: calc(50% - 20px); /* Adjust width to fit two items per row with some spacing */
+    margin: 10px; /* Add spacing between items */
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 768px) {
+    .card {
+      width: calc(100% - 20px); /* Adjust width to fill the full width of the screen */
+    }
+  }
+  
