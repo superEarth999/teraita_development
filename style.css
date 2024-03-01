@@ -476,7 +476,7 @@ nav ul li a:hover {
 }
 
 /* socail logo style */
-.card {
+.footerCard {
     width: fit-content;
     height: fit-content;
     background-color: rgb(238, 238, 238);
@@ -487,6 +487,7 @@ nav ul li a:hover {
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
     background: transparent;
+    
     
   }
   
@@ -550,6 +551,72 @@ nav ul li a:hover {
       transform: translateY(0);
       opacity: 1;
     }
+  }
+  
+  /* card style */
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px; /* Adjust as needed */
+  }
+  .card a{ 
+   
+    text-decoration: none;
+  }
+  .card {
+    display: block;
+    position: relative;
+    max-width: 300px;
+    max-height: 400px;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+  }
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .card:hover:before {
+    transform: scale(28);
+  }
+  
+  .card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
   }
   
   
