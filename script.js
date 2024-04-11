@@ -5,11 +5,11 @@ document.getElementById('learnMoreBtn').addEventListener('click', function() {
 });
 
 // JavaScript for contact form submission (example)
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+// document.getElementById('contactForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
     
-    alert('Thank you for sending message and your Form submitted successfully!..we will get back to you.');
-});
+//     alert('Thank you for sending message and your Form submitted successfully!..we will get back to you.');
+// });
 
 
 // routing pages

@@ -6,6 +6,7 @@
     <title>Teraita</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="form1.css">
 </head>
 <body>
     <!-- Header with logo and navigation bar -->
@@ -238,10 +239,11 @@
 
         <!-- Content of contact page -->
         <section id="contact" class="page-section">
-            <form id="contactForm" action="contact.php" method="POST">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
 
             <div class="container">
                 <h1>Contact Us</h1>
+                <input type="hidden" name="access_key" value="ee892604-3b78-40d5-b97f-ef13b3b60b22">
                 <p>Have a question or want to get in touch? Fill out the form below, and we'll get back to you as soon as possible.</p>
                 <form id="contactForm">
                     <div class="form-group">
@@ -256,11 +258,17 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
+                    <div class="h-captcha" data-captcha="true"></div>
                     <button type="submit" class="btn">Submit</button>
                 </form>
+                <script src="https://web3forms.com/client/script.js" async defer></script>
             </div>
             </form>
         </section>
+
+       
+       
+        
         
     </main>
     <!-- footer -->
