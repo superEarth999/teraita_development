@@ -16,6 +16,16 @@
             transition: top 0.3s; 
             padding: 10px 20px;
         }
+        .select{
+         display: flex;
+          
+
+        }
+        .select img{
+          border-radius: 50%;
+          width: 700px;
+          height: 500px;
+        }
         
         .contain {
             max-width: 1200px;
@@ -538,6 +548,7 @@ footer {
 .container {
     width: 80%;
     margin: 0 auto;
+    
   
 }
 
