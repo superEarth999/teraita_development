@@ -48,6 +48,9 @@
     .service {
       width: 90%; /* Adjust width to fit smaller screens */
     }
+    .logo img{
+      width: 90%;
+    }
   }  
 
   /* resouces */
