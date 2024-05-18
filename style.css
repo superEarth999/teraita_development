@@ -51,13 +51,20 @@
         
         .logo {
             flex: 0 0 auto; 
-           
+             
         }
         
         .logo img {
             max-width: 200px; 
             height: auto;
+            content: '';
+    
         }
+        .logo img:hover{
+          border: solid black;
+          transition: border 0.1s ease;
+        }
+        
         
         #navMenu {
             flex: 1; 
@@ -587,8 +594,8 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     position: relative;
-  display: inline-block;
-  text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
   
 }
 
