@@ -118,6 +118,9 @@
             nav ul li:hover ul {
                 display: block;
             }
+            .logo img{
+              width: 90%;
+            }
         }
   /* Home section styles */
 #home {
