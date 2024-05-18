@@ -586,6 +586,24 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
+  display: inline-block;
+  text-decoration: none;
+  
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #050505; /* Border color */
+  transition: width 0.3s ease-in-out; /* Transition for smooth effect */
+}
+nav ul li a:hover::after {
+  width: 100%; /* Full width on hover */
 }
 
 nav ul li a:hover {
