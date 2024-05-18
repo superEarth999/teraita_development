@@ -60,10 +60,11 @@
             content: '';
     
         }
-        .logo img:hover{
+        /* logo hover */
+        /* .logo img:hover{
           border: solid black;
           transition: border 0.1s ease;
-        }
+        } */
         
         
         #navMenu {
