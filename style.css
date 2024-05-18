@@ -4,6 +4,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            
+        }
+        html{
+          scroll-behavior: smooth;
         }
         #header {
             position: fixed;
