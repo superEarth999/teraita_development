@@ -1,8 +1,5 @@
 // JavaScript for home section
-document.getElementById('learnMoreBtn').addEventListener('click', function() {
-    
-    alert('You clicked the Learn More button!');
-});
+
 
 
 function showPage(pageId) {
@@ -41,5 +38,13 @@ document.getElementById('navToggle').addEventListener('click', function() {
     }
 });
 
+// document.getElementById("learnMoreBtn").onclick = function() {
+    
+//     window.location.href = "https://teraita.vercel.app/index.html";
+// };
+function openNewTab() {
+    
+    window.open("TeraitaInfo.html", "_blank");
+}
 
 

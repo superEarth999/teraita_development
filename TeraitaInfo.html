@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="info.css">
+    <style>
+        /* Custom styles can be added here */
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    
+        <header id="home2" class="bg--600  text-white py-4 " >
+           
+            <div class="container mx-auto px-4 flex items-center justify-between">
+                <a href="#home2"><img src="assets\img\teraita.png" alt="teraita Logo" class="w-22 h-24"></a>
+                <!-- If you have a high-resolution logo, adjust the width and height as needed -->
+            </div>
+            
+        </header>
+       
+        
+        
+        
+        <nav class="bg-gray-800 text-white py-2  ">
+            
+            <div class="container mx-auto px-4">
+                <ul class="flex justify-end space-x-4">
+                    <li><a href="#home2" class="hover:text-gray-300">Home</a></li>
+                    <li class="dropdown relative">
+                        <a href="#" class="hover:text-gray-300">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#teraita" onclick="smoothScroll(event)">ORG Information</a></li>
+                            <li><a href="#history" onclick="smoothScroll(event)">ORG History</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class=" dropdown relative">
+                        <a href="#services" onclick="smoothScroll(event)" class="hover:text-gray-300">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#Web" onclick="smoothScroll(event)">Web Development</a></li>
+                            <li><a href="#Mobile" onclick="smoothScroll(event)">Mobile Development</a></li>
+                            <li><a href="#CRM" onclick="smoothScroll(event)">CRM Development</a></li>
+                            <li><a href="#Commerse" onclick="smoothScroll(event)">E-commerce Solutions</a></li>
+                            <li><a href="#Digital" onclick="smoothScroll(event)">Digital Marketing</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#getintouch" onclick="smoothScroll(event)" class="hover:text-gray-300">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    
+   
+    <!-- Main Content -->
+    <main  class="container mx-auto px-4 py-8">
+        <!-- Introduction Section -->
+        
+        <!-- welcome page -->
+        <section id="home" >
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">Welcome to Teraita</h1>
+                <p class="mt-4 text-xl text-gray-500">Your premier destination for cutting-edge digital solutions.</p>
+                <p class="mt-4 text-lg text-gray-600">Our mission is to empower your business by providing bespoke web and mobile experiences that captivate your audience and streamline your operations.</p>
+            </div>
+            
+        </section>
+
+        <section>
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Why Choose Teraita?</h2>
+                <div class="mt-10 space-y-10">
+                    <!-- Innovation and Excellence -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Icon here -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-8 4h8a2 2 0 012 2v11H6V9a2 2 0 012-2z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Innovation and Excellence</h3>
+                            <p class="mt-2 text-base text-gray-500">At Teraita, we prioritize staying at the forefront of technological progress. Our solutions are designed to keep your company competitive in an ever-evolving digital landscape.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Tailored Solutions -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Icon here -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Tailored Solutions</h3>
+                            <p class="mt-2 text-base text-gray-500">We understand that every business is unique. That's why we offer custom digital solutions tailored to your specific needs, ensuring that our services perfectly align with your business goals.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Comprehensive Services -->
+                    <div>
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">Comprehensive Services</h3>
+                        <div class="mt-4 space-y-4">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+                                        <!-- Icon here -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7h-1V3H9v4H8m8 0h1a2 2 0 012 2v11H5V9a2 2 0 012-2h1m0 0V3h6v4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-base leading-6 font-medium text-gray-900">Web Development</p>
+                                    <p class="mt-1 text-base text-gray-500">Create stunning, responsive websites that provide an exceptional user experience.</p>
+                                </div>
+                            </div>
+            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+                                        <!-- Icon here -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h14a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm7 12l4-4-4-4v8z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-base leading-6 font-medium text-gray-900">Mobile App Development</p>
+                                    <p class="mt-1 text-base text-gray-500">Develop high-performance mobile applications that engage your users on-the-go.</p>
+                                </div>
+                            </div>
+            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+                                        <!-- Icon here -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v16H4V4zm3 8h10M7 12l2-2m-2 2l2 2m6-2h2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-base leading-6 font-medium text-gray-900">UI/UX Design</p>
+                                    <p class="mt-1 text-base text-gray-500">Design interfaces that are both visually appealing and easy to use, enhancing user satisfaction.</p>
+                                </div>
+                            </div>
+            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+                                        <!-- Icon here -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h14a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm7 12l4-4-4-4v8z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-base leading-6 font-medium text-gray-900">E-commerce Solutions</p>
+                                    <p class="mt-1 text-base text-gray-500">Build robust e-commerce platforms that drive sales and improve customer retention.</p>
+                                </div>
+                            </div>
+            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+                                        <!-- Icon here -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 1v22m5-11H7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-base leading-6 font-medium text-gray-900">Digital Marketing</p>
+                                    <p class="mt-1 text-base text-gray-500">Implement effective digital marketing strategies to increase your online presence and attract more customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Process</h2>
+                <div class="mt-10">
+                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <!-- Consultation -->
+                        <div class="pt-6">
+                            <div class="flow-root bg-gray-50 rounded-lg px-4 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <!-- Icon here -->
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-8 4h8a2 2 0 012 2v11H6V9a2 2 0 012-2z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900">Consultation</h3>
+                                    <p class="mt-5 text-base text-gray-500">We start by understanding your business needs and objectives.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Strategy Development -->
+                        <div class="pt-6">
+                            <div class="flow-root bg-gray-50 rounded-lg px-4 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <!-- Icon here -->
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900">Strategy Development</h3>
+                                    <p class="mt-5 text-base text-gray-500">We develop a tailored digital strategy that aligns with your goals.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Design and Development -->
+                        <div class="pt-6">
+                            <div class="flow-root bg-gray-50 rounded-lg px-4 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <!-- Icon here -->
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7h-1V3H9v4H8m8 0h1a2 2 0 012 2v11H5V9a2 2 0 012-2h1m0 0V3h6v4z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900">Design and Development</h3>
+                                    <p class="mt-5 text-base text-gray-500">Our team of experts designs and develops solutions that are both beautiful and functional.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Testing and Optimization -->
+                        <div class="pt-6">
+                            <div class="flow-root bg-gray-50 rounded-lg px-4 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <!-- Icon here -->
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900">Testing and Optimization</h3>
+                                    <p class="mt-5 text-base text-gray-500">We rigorously test our solutions to ensure they perform flawlessly.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Launch and Support -->
+                        <div class="pt-6">
+                            <div class="flow-root bg-gray-50 rounded-lg px-4 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <!-- Icon here -->
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-8 4h8a2 2 0 012 2v11H6V9a2 2 0 012-2z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900">Launch and Support</h3>
+                                    <p class="mt-5 text-base text-gray-500">We launch your digital product and provide ongoing support to ensure its success.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- why teraita -->
+        <section >
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <!-- Industries We Serve -->
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Industries We Serve</h2>
+                    <div class="mt-10 space-y-10">
+                        <div class="flex flex-col items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Icon here -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-lg leading-6 font-medium text-gray-900">Startups</div>
+                            <p class="mt-2 text-base text-gray-500">Launch your business with impactful digital solutions that make a strong first impression.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Icon here -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-lg leading-6 font-medium text-gray-900">Established Corporations</div>
+                            <p class="mt-2 text-base text-gray-500">Upgrade your digital footprint with advanced technologies and innovative strategies.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Icon here -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-lg leading-6 font-medium text-gray-900">E-commerce</div>
+                            <p class="mt-2 text-base text-gray-500">Enhance your online store with user-friendly interfaces and secure payment systems.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Icon here -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-lg leading-6 font-medium text-gray-900">Healthcare</div>
+                            <p class="mt-2 text-base text-gray-500">Develop applications that improve patient care and streamline healthcare management.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Icon here -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-lg leading-6 font-medium text-gray-900">Finance</div>
+                            <p class="mt-2 text-base text-gray-500">Create secure and efficient financial applications that meet industry standards.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Why Teraita? -->
+                <div id ="teraita"class="mt-16 text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Why Teraita?</h2>
+                    <div class="mt-10 space-y-10">
+                        <div class="flex flex-col items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Icon here -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-lg leading-6 font-medium text-gray-900">Expert Team</div>
+                            <p class="mt-2 text-base text-gray-500">Our team combines creativity with technical expertise to deliver high-quality products and services.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Icon here -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-lg leading-6 font-medium text-gray-900">Customer-Centric Approach</div>
+                            <p class="mt-2 text-base text-gray-500">We put our clients at the heart of everything we do, ensuring that your satisfaction is our top priority.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Icon here -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 2H7m2-4h6M5 18h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-lg leading-6 font-medium text-gray-900">Proven Track Record</div>
+                            <p class="mt-2 text-base text-gray-500">We have a history of delivering successful digital solutions that drive business growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- services section -->
+        <section id ="services"class="bg-gray-100 py-12">
+                <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Our Services</h2>
+        
+                <!-- Web Development -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 id="Web"class="text-xl font-bold text-gray-900 mb-4">Web Development</h3>
+                    <p class="text-gray-700 mb-4">Our web development services encompass everything from creating stunning, responsive websites to building complex web applications. We believe in building websites that not only look great but also drive results for your business.</p>
+                    <p class="text-gray-700 mb-4">We start by understanding your business goals, target audience, and brand identity. Then, our team of skilled developers utilizes the latest technologies and industry best practices to bring your vision to life.</p>
+                    <p class="text-gray-700">Whether you need a simple brochure website, a custom e-commerce platform, or a web application tailored to your specific needs, we have the expertise to deliver high-quality solutions that exceed your expectations.</p>
+                </div>
+        
+                <!-- Mobile App Development -->
+                <div id="Mobile"class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Mobile App Development</h3>
+                    <p class="text-gray-700 mb-4">Our mobile app development services cover the entire app development lifecycle, from concept to launch and beyond. We specialize in building native and cross-platform mobile apps that deliver outstanding performance and user experience.</p>
+                    <p class="text-gray-700 mb-4">We work closely with you to understand your business objectives, target audience, and technical requirements. Our team of experienced app developers then utilizes cutting-edge technologies and agile development methodologies to create apps that meet your unique needs.</p>
+                    <p class="text-gray-700">Whether you're looking to create a consumer-facing app, an enterprise solution, or a game-changing startup idea, we have the expertise and passion to turn your vision into reality.</p>
+                </div>
+        
+                <!-- UI/UX Design -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 id="CRM"class="text-xl font-bold text-gray-900 mb-4">UI/UX Design</h3>
+                    <p class="text-gray-700 mb-4">Our UI/UX design services focus on creating intuitive and engaging user interfaces that enhance user satisfaction and drive conversions. We believe that a great user experience is essential for the success of any digital product.</p>
+                    <p class="text-gray-700 mb-4">Our team of talented designers follows a user-centered design approach, starting with user research and wireframing, and ending with high-fidelity prototypes and usability testing. We pay attention to every detail to ensure that your website or app not only looks beautiful but also functions seamlessly.</p>
+                    <p class="text-gray-700">Whether you need a complete redesign of your existing product or assistance with creating a new one from scratch, we're here to help you create a user experience that stands out in the competitive digital landscape.</p>
+                </div>
+        
+                <!-- E-commerce Solutions -->
+                <div id="Commerse"class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">E-commerce Solutions</h3>
+                    <p class="text-gray-700 mb-4">Our e-commerce solutions are designed to help businesses of all sizes succeed in the competitive online marketplace. We specialize in creating custom e-commerce platforms that are tailored to your specific needs and goals.</p>
+                    <p class="text-gray-700 mb-4">From user-friendly product catalogs and secure payment gateways to seamless checkout processes and robust inventory management systems, we provide end-to-end solutions that drive sales and improve customer retention.</p>
+                    <p class="text-gray-700">Whether you're launching a new online store or looking to optimize your existing e-commerce platform, we have the expertise and resources to help you achieve your business objectives and succeed in the digital world.</p>
+                </div>
+        
+                <!-- Digital Marketing -->
+                <div id="Digital"class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Digital Marketing</h3>
+                    <p class="text-gray-700 mb-4">Our digital marketing services are designed to help you increase your online visibility, attract more traffic to your website, and convert visitors into customers. We develop customized digital marketing strategies tailored to your business goals and target audience.</p>
+                    <p class="text-gray-700 mb-4">From search engine optimization (SEO) and pay-per-click (PPC) advertising to social media marketing and email marketing, we leverage a variety of tactics to help you reach your target audience and achieve measurable results.</p>
+                    <p class="text-gray-700">Whether you're a small startup or a large enterprise, we're here to help you navigate the complex world of digital marketing and achieve your business objectives.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Developer Information -->
+        
+        
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl font-bold mb-4">About the Developers</h2>
+            <div class="flex items-center mb-4">
+                <img src="assets\img\Nitin.jpeg" alt="Nitin Mane" class="w-16 h-16 rounded-full mr-4">
+                <div>
+                    <h3 class="text-lg font-semibold">Nitin Mane</h3>
+                    <p class="text-gray-700">Nitin Mane is the co-founder and CEO of Teraita. He is a visionary leader and philanthropist known for his innovative approach to technology and commitment to social impact.</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <img src="assets\img\atul.jpeg" alt="Atul Mane" class="w-16 h-16 rounded-full mr-4">
+                <div>
+                    <h3 class="text-lg font-semibold">Atul Mane</h3>
+                    <p class="text-gray-700">Atul Mane is the co-founder and CTO of Teraita. He is a technology pioneer with expertise in software development and architecture.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <section id="history"class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Historical Background</h2>
+            <p class="text-gray-700 mb-4">Teraita was founded in 2021 by Atul Mane and Nitin Mane with a vision to revolutionize digital solutions for businesses of all sizes. With a deep understanding of the technological landscape and a passion for innovation, Atul and Nitin set out to create a company that would provide cutting-edge web and mobile experiences tailored to the unique needs of each client.</p>
+            <p class="text-gray-700 mb-4">Starting with a small team of dedicated professionals, Teraita quickly gained a reputation for excellence in digital strategy, design, and development. The company's commitment to delivering high-quality, customized solutions helped it attract a diverse range of clients, from startups to established corporations across various industries.</p>
+            <p class="text-gray-700">In the years since its inception, Teraita has continued to grow and expand its offerings, incorporating the latest technologies and industry best practices. Today, Teraita stands as a trusted partner for businesses looking to enhance their digital presence and drive growth through innovative solutions.</p>
+        </section>
+        
+        
+        
+        
+        
+        
+
+        <!-- Other Sections -->
+        <!-- You can add more sections as needed -->
+        <!-- get in touch -->
+        <section id="getintouch">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Get in Touch</h2>
+                <p class="mt-4 text-xl text-gray-500">Ready to transform your digital presence? Contact Teraita today and let's discuss how we can help your business thrive in the digital age.</p>
+                
+                <div class="mt-8 space-y-4 text-lg text-gray-600">
+                    <p>Email: <a href="mailto:contact@teraita.com" class="text-indigo-500">teraitaservices@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+11234567890" class="text-indigo-500">8830713971</a></p>
+                    <p>Address: Shree JagatGuru Appt,near bharat PetrolPump,pune,Maharashtra-411047</p>
+                </div>
+                
+                <div class="mt-8">
+                    <p class="text-lg text-gray-600">Follow us on social media for the latest updates and insights:</p>
+                    <div class="mt-4 flex justify-center space-x-6">
+                       
+                        <a href="https://twitter.com/TeraitaTech" class="text-indigo-500 hover:text-indigo-700">Twitter: @TeraitaTech</a>
+                        <a href="https://www.linkedin.com/in/nitinmane25/" target="_blank" class="text-indigo-500 hover:text-indigo-700">LinkedIn: Teraita</a>
+                    </div>
+                </div>
+            
+                <p class="mt-8 text-lg text-gray-600">Teraita – Empowering your digital future.</p>
+            </div>
+            
+        </section>
+        <a href="#home2" onclick="smoothScroll(event)" class="flex items-center text-gray-700 hover:underline "><img src="assets\img\topArrow.png" alt="arrow" >Back To Home</a>
+    </main>
+    
+<!-- <script src="sales.js"></script> -->
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        
+    <div class="container mx-auto px-4 flex justify-between">
+        <nav>
+            <ul class="flex">
+                <li><a href="#home2" class="hover:text-gray-300">Home</a></li>&nbsp;&nbsp;
+                <li class="dropdown relative">
+                    <a href="#teraita" onclick="smoothScroll(event)" class="hover:text-gray-300">About</a>&nbsp;&nbsp;
+                    <!-- <ul class="dropdown-menu">
+                        <li><a href="#teraita" onclick="smoothScroll(event)">ORG Information</a></li>
+                        <li><a href="#history" onclick="smoothScroll(event)">ORG History</a></li>
+                    </ul> -->
+                </li>
+                <li class="dropdown relative">
+                    <a href="#services" onclick="smoothScroll(event)" class="hover:text-gray-300">Services</a>&nbsp;&nbsp;
+                    <!-- <ul class="dropdown-menu">
+                        <li><a href="#Web" onclick="smoothScroll(event)">Web Development</a></li>
+                        <li><a href="#Mobile" onclick="smoothScroll(event)">Mobile Development</a></li>
+                        <li><a href="#CRM" onclick="smoothScroll(event)">CRM Development</a></li>
+                        <li><a href="#Commerse" onclick="smoothScroll(event)">E-commerce Solutions</a></li>
+                        <li><a href="#Digital" onclick="smoothScroll(event)">Digital Marketing</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="#getintouch" onclick="smoothScroll(event)" class="hover:text-gray-300">Contact</a></li>&nbsp;
+            </ul>
+        </nav>
+    </div>
+
+
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Teraita</p>
+        </div>
+    </footer>
+    <!-- <script src="teraitainfoscript.js"></script> -->
+    <script>
+        function smoothScroll(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const targetId = event.target.getAttribute('href'); // Get the target section's id
+            const targetPosition = document.querySelector(targetId).offsetTop; // Calculate its position
+            window.scroll({
+                top: targetPosition, // Scroll to the target position
+                behavior: 'smooth' // Smooth scrolling behavior
+            });
+        }
+    </script>
+    
+</body>
+
+</html>

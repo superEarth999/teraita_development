@@ -1,0 +1,27 @@
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    background-color: #1b1731; 
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Show dropdown menu when its parent li is hovered */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style for dropdown menu items */
+.dropdown-menu a {
+    display: block;
+    color: #fff; /* Change text color as needed */
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for dropdown menu items */
+.dropdown-menu a:hover {
+    background-color: #8179b3; /* Change background color on hover */
+}
