@@ -15,18 +15,20 @@
     
         <header id="home2" class="bg--600  text-white py-4 " >
            
-            <div class="container mx-auto px-4 flex items-center justify-between">
+            <!-- <div class="container mx-auto px-4 flex items-center justify-between">
                 <a href="#home2"><img src="assets\img\teraita.png" alt="teraita Logo" class="w-22 h-24"></a>
-                <!-- If you have a high-resolution logo, adjust the width and height as needed -->
-            </div>
+                 If you have a high-resolution logo, adjust the width and height as needed
+            </div> -->
             
         </header>
        
         
         
         
-        <nav class="bg-gray-800 text-white py-2  ">
-            
+         <nav class="bg-gray-800 text-white py-2 fixed w-full top-0 z-50">
+            <h1 class="text-4xl font-bold italic ml-10"><span class="text-yellow-500">T</span>eraita</h1>
+
+
             <div class="container mx-auto px-4">
                 <ul class="flex justify-end space-x-4">
                     <li><a href="#home2" class="hover:text-gray-300">Home</a></li>
@@ -54,6 +56,8 @@
                 </ul>
             </div>
         </nav>
+
+       
     
    
     <!-- Main Content -->
@@ -61,7 +65,7 @@
         <!-- Introduction Section -->
         
         <!-- welcome page -->
-        <section id="home" >
+        <section id="home">
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">Welcome to Teraita</h1>
                 <p class="mt-4 text-xl text-gray-500">Your premier destination for cutting-edge digital solutions.</p>
@@ -70,7 +74,7 @@
             
         </section>
 
-        <section>
+        <section >
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Why Choose Teraita?</h2>
                 <div class="mt-10 space-y-10">
@@ -418,7 +422,7 @@
         
                 <!-- Web Development -->
                 <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                    <h3 id="Web"class="text-xl font-bold text-gray-900 mb-4">Web Development</h3>
+                    <h3 id="Web"class="text-xl font-bold text-gray-900 mb-4 ">Web Development</h3>
                     <p class="text-gray-700 mb-4">Our web development services encompass everything from creating stunning, responsive websites to building complex web applications. We believe in building websites that not only look great but also drive results for your business.</p>
                     <p class="text-gray-700 mb-4">We start by understanding your business goals, target audience, and brand identity. Then, our team of skilled developers utilizes the latest technologies and industry best practices to bring your vision to life.</p>
                     <p class="text-gray-700">Whether you need a simple brochure website, a custom e-commerce platform, or a web application tailored to your specific needs, we have the expertise to deliver high-quality solutions that exceed your expectations.</p>
@@ -520,10 +524,47 @@
             
                 <p class="mt-8 text-lg text-gray-600">Teraita – Empowering your digital future.</p>
             </div>
+
+            <!-- contact form -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="6e18bb16-0ad0-49f5-bb04-efb43c5b6f25">
+            
+                <!-- Form Inputs -->
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" name="name" id="name" required class="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+            
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" name="email" id="email" required class="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+            
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea name="message" id="message" required class="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                </div>
+            
+                <!-- hCaptcha Spam Protection -->
+                <div class="mb-4">
+                    <div class="h-captcha" data-captcha="true"></div>
+                </div>
+            
+                <div>
+                    <button type="submit" class="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                        Submit
+                    </button>
+                </div>
+            
+            </form>
+            
             
         </section>
         <a href="#home2" onclick="smoothScroll(event)" class="flex items-center text-gray-700 hover:underline "><img src="assets\img\topArrow.png" alt="arrow" >Back To Home</a>
     </main>
+    
     
 <!-- <script src="sales.js"></script> -->
     <!-- Footer -->
