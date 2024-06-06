@@ -33,15 +33,15 @@
                 <ul class="flex justify-end space-x-4">
                     <li><a href="#home2" class="hover:text-gray-300">Home</a></li>
                     <li class="dropdown relative">
-                        <a href="#" onclick="toggleDropdown(event)" class="hover:text-gray-300">About</a>
+                        <a href="#about" onclick="toggleDropdown(event)" class="hover:text-gray-300">About</a>
                         <ul id="dropdown-menu-about" class="dropdown-menu absolute hidden text-gray-700 pt-1">
                             <li><a href="#teraita" onclick="hideDropdown('dropdown-menu-about'); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">ORG Information</a></li>
-                            <li><a href="#history" onclick="hideDropdown('dropdown-menu-about'); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">ORG History</a></li>
+                            <li><a href="#history" onclick="hideDropdown('dropdown-menu-about'); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200 hidden">ORG History</a></li>
                         </ul>
                         
                     </li>
                     <li class="dropdown relative">
-                        <a href="#" class="hover:text-gray-300">Services</a>
+                        <a href="#services" class="hover:text-gray-300">Services</a>
                         <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
                             <li><a href="#Web" onclick="smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">Web Development</a></li>
                             <li><a href="#Mobile" onclick="smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">Mobile Development</a></li>
@@ -422,7 +422,7 @@
         <!-- services section -->
         <section id ="services"class="bg-gray-100 py-12">
                 <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-8">Our Services</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8" id="services">Our Services</h2>
         
                 <!-- Web Development -->
                 <div class="bg-white rounded-lg shadow-md p-6 mb-6">
@@ -470,7 +470,7 @@
         <!-- Developer Information -->
         
         
-        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6" id="about">
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <h2 class="text-xl font-bold mb-4">About the Developers</h2>
             <div class="flex items-center mb-4">
@@ -616,7 +616,7 @@
                 behavior: 'smooth' // Smooth scrolling behavior
             });
         }
-        function toggleDropdown(event) {
+       /* function toggleDropdown(event) {
             event.preventDefault();
             var dropdownMenu = event.target.nextElementSibling;
             dropdownMenu.classList.toggle('hidden');
@@ -625,7 +625,7 @@
         function hideDropdown(menuId) {
             var dropdownMenu = document.getElementById(menuId);
             dropdownMenu.classList.add('hidden');
-        }
+        }*/
         
     </script>
     
