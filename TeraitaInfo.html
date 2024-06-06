@@ -33,11 +33,12 @@
                 <ul class="flex justify-end space-x-4">
                     <li><a href="#home2" class="hover:text-gray-300">Home</a></li>
                     <li class="dropdown relative">
-                        <a href="#"onclick="toggleDropdown(event)" class="hover:text-gray-300">About</a>
-                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                            <li><a href="#teraita" onclick="smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">ORG Information</a></li>
-                            <li><a href="#history" onclick="smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">ORG History</a></li>
+                        <a href="#" onclick="toggleDropdown(event)" class="hover:text-gray-300">About</a>
+                        <ul id="dropdown-menu-about" class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                            <li><a href="#teraita" onclick="hideDropdown('dropdown-menu-about'); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">ORG Information</a></li>
+                            <li><a href="#history" onclick="hideDropdown('dropdown-menu-about'); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">ORG History</a></li>
                         </ul>
+                        
                     </li>
                     <li class="dropdown relative">
                         <a href="#" class="hover:text-gray-300">Services</a>
