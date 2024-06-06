@@ -15,10 +15,10 @@
     
         <header id="home2" class="bg--600  text-white py-4 " >
            
-            <!-- <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="container mx-auto px-4 flex items-center justify-between">
                 <a href="#home2"><img src="assets\img\teraita.png" alt="teraita Logo" class="w-22 h-24"></a>
-                 If you have a high-resolution logo, adjust the width and height as needed
-            </div> -->
+                 <!-- If you have a high-resolution logo, adjust the width and height as needed -->
+            </div>
             
         </header>
        
@@ -54,6 +54,52 @@
             </div>
             
         </nav>
+
+        <!-- <nav class="bg-gray-800 text-white py-2 fixed w-full top-0 z-50">
+            <h1 class="text-4xl font-bold italic ml-10"><span class="text-yellow-500">T</span>eraita</h1>
+            <div class="container mx-auto px-4">
+                <ul class="flex justify-end space-x-4">
+                    <li><a href="#home2" onclick="hideMenuOptions()" class="hover:text-gray-300">Home</a></li>
+                    <li class="dropdown relative">
+                        <a href="#" onclick="hideMenuOptions()" class="hover:text-gray-300">About</a>
+                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                            <li><a href="#teraita" onclick="hideMenuOptions(); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">ORG Information</a></li>
+                            <li><a href="#history" onclick="hideMenuOptions(); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">ORG History</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown relative">
+                        <a href="#" onclick="hideMenuOptions()" class="hover:text-gray-300">Services</a>
+                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                            <li><a href="#Web" onclick="hideMenuOptions(); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">Web Development</a></li>
+                            <li><a href="#Mobile" onclick="hideMenuOptions(); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">Mobile Development</a></li>
+                            <li><a href="#CRM" onclick="hideMenuOptions(); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">CRM Development</a></li>
+                            <li><a href="#Commerse" onclick="hideMenuOptions(); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">E-commerce Solutions</a></li>
+                            <li><a href="#Digital" onclick="hideMenuOptions(); smoothScroll(event)" class="block px-4 py-2 hover:bg-gray-200">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#getintouch" onclick="hideMenuOptions(); smoothScroll(event)" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <script>
+            function hideMenuOptions() {
+                // Hide all dropdown menus
+                var dropdownMenus = document.querySelectorAll('.dropdown-menu');
+                dropdownMenus.forEach(function(menu) {
+                    menu.classList.add('hidden');
+                });
+        
+                // Uncheck the checkbox to close the menu on mobile
+                var checkbox = document.getElementById('check');
+                if (checkbox) {
+                    checkbox.checked = false;
+                }
+            }
+        </script> -->
+        
+        
+        
 
        
     
