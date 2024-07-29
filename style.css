@@ -23,16 +23,17 @@
           position: absolute;
           top: 50%;
           left: 50%;
+          background-origin: padding-box;
           transform: translate(-50%, -50%); /* Center the content */
           text-align: center;
           color: #e6ebe4; /* Text color for contrast */
-           /* Semi-transparent background */
+          background: rgba(24, 23, 23, 0.5);
           padding: 20px;
           border-radius: 10px;
           z-index: 1; /* Ensure content is above the video */
           width: 80%; /* Responsive width */
           max-width: 600px; /* Maximum width for larger screens */
-          /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
       }
       .content::before {
         content: "";
@@ -48,7 +49,7 @@
       
       /* Responsive Design */
       @media (max-width: 768px) {
-          .officevideo{
+          .video-container{
             display: none;
           }
           .content {
@@ -59,11 +60,13 @@
       }
       
       @media (max-width: 480px) {
-        
+        .video-container{
+          display: none;
+        }
           .content {
               width: 95%; /* Increase width on very small screens */
               padding: 10px;
-              display: none;
+             display: none;
               /* Ensure full width and readability on very small screens */
           }
       
@@ -113,6 +116,7 @@
             padding: 0;
             
         }
+        
         .officevideo {
           width: 100%;
           height: auto;
@@ -209,10 +213,84 @@
         }
         
         
-        main {
-            margin-top: 70px; 
-        }
-        
+        /* homepage */
+
+        /* Ensure the section covers the full viewport height and has padding */
+.homepage {
+  position: relative; /* Allows absolute positioning of children if needed */
+  background: url('assets/img/homeAi.jpg') no-repeat center center;
+  background-size: cover; /* Cover the entire section */
+  padding: 20px; /* Padding around the content */
+  min-height: 100vh; /* Ensure it covers at least the full viewport height */
+  box-sizing: border-box; /* Includes padding in the element's total width and height */
+}
+
+/* Style for content container */
+.homepage .select .container {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  padding: 20px; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the container horizontally */
+  box-sizing: border-box; /* Includes padding in the element's total width */
+}
+
+/* Make sure headings and paragraphs have some margin */
+.homepage h1, .homepage p {
+  margin: 0 0 10px 0; /* Remove default margin and add space below */
+}
+
+/* Style for button */
+.homepage button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; /* Button color */
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.homepage button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* Marquee styling (optional, but not recommended for modern web design) */
+.homepage marquee {
+  display: block;
+  margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homepage {
+      padding: 15px; /* Reduce padding on smaller screens */
+  }
+  
+  .homepage .select .container {
+      padding: 15px; /* Adjust padding inside the container */
+      max-width: 90%; /* Allow more space on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage {
+      padding: 10px; /* Further reduce padding */
+  }
+
+  .homepage .select .container {
+      padding: 10px; /* Adjust padding inside the container */
+      max-width: 95%; /* Allow full width on very small screens */
+  }
+
+  .homepage button {
+      padding: 8px 16px; /* Adjust button size for smaller screens */
+      font-size: 0.875rem; /* Adjust font size */
+  }
+}
+/* homepage end */
 
         /* Responsive styles */
         @media screen and (max-width: 600px) {
@@ -1066,4 +1144,231 @@ nav ul li a:hover {
     .footer-content .address-section h1 {
         font-size: 16px;
     }
+}
+
+/* about section */
+/* General styles for the About section */
+.About {
+  position: relative; /* Allows absolute positioning of children if needed */
+  background: url('/assets/img/about.webp') no-repeat center center;
+  background-size: cover; /* Cover the entire section */
+  padding: 40px 20px; /* Padding around the content */
+  min-height: 100vh; /* Ensure it covers at least the full viewport height */
+  box-sizing: border-box; /* Includes padding in the element's total width and height */
+  color: #f3ebeb; /* Text color for contrast against background */
+}
+
+/* Container styling */
+.About .container {
+  background: rgba(0, 0, 0, 0.7); /* Slightly transparent black background for readability */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the container horizontally */
+  box-sizing: border-box; /* Includes padding in the element's total width */
+}
+
+/* Headings styling */
+.About h1, .About h2 {
+  margin: 0 0 20px 0;
+  font-family: 'Arial', sans-serif; /* Use a clean and readable font */
+}
+
+.About h1 {
+  font-size: 2.5rem; /* Larger font size for main heading */
+}
+
+.About h2 {
+  font-size: 1.75rem; /* Slightly smaller font size for subheadings */
+}
+.team-member h3 {
+  color: #000;
+}
+
+/* Paragraph styling */
+.About p {
+  margin: 0 0 20px 0;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* List styling */
+.About ul {
+  margin: 0 0 20px 0;
+  padding-left: 20px; /* Add padding for list items */
+}
+
+.About li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Team members styling */
+.About .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between team members */
+}
+
+.About .team-member {
+  flex: 1 1 calc(50% - 20px); /* Responsive layout with flex */
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.About .team-member img {
+  max-width: 100%; /* Ensure image scales correctly */
+  height: auto;
+  border-radius: 50%; /* Circular profile images */
+  margin-bottom: 10px;
+}
+
+.About .team-member h3 {
+  margin: 10px 0;
+  font-size: 1.25rem; /* Adjust font size */
+}
+
+.About .team-member p {
+  margin: 0;
+  font-size: 1rem; /* Adjust font size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .About {
+      padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .About .container {
+      padding: 15px;
+  }
+
+  .About .team-member {
+      flex: 1 1 100%; /* Stack team members on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .About h1 {
+      font-size: 2rem; /* Smaller font size for very small screens */
+  }
+
+  .About h2 {
+      font-size: 1.5rem; /* Smaller font size for very small screens */
+  }
+
+  .About .team-member h3 {
+      font-size: 1rem; /* Smaller font size for team member names */
+  }
+
+  .About .team-member p {
+      font-size: 0.875rem; /* Smaller font size for team member positions */
+  }
+}
+
+/* contact page */
+
+/* General styles for the Contact section */
+.page-section {
+  padding: 40px 20px; /* Padding around the section */
+  position: relative; /* Allows absolute positioning of children if needed */
+  text-align: center; /* Center-align text and elements */
+  color: #fff; /* Text color */
+}
+
+/* Background image styling */
+.contact-section {
+  background: url('/assets/img/contactpage.jpg') no-repeat center center; /* Path to your background image */
+  background-size: cover; /* Cover the entire section */
+  background-attachment: fixed; /* Fixed background for a parallax effect */
+}
+
+/* Form styling */
+form {
+  background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background for form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+  text-align: left; /* Left-align labels and inputs */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px; /* Space below the label */
+  font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%; /* Full width for inputs and textareas */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for inputs and textareas */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* Image styling */
+.contact-image {
+  margin-top: 40px; /* Space above the image */
+}
+
+.contact-image img {
+  max-width: 100%; /* Ensure image scales with container */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-section {
+      padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .form-group {
+      text-align: center; /* Center-align labels and inputs */
+  }
+}
+
+@media (max-width: 480px) {
+  .page-section h1 {
+      font-size: 2rem; /* Smaller font size for very small screens */
+  }
+
+  .page-section p {
+      font-size: 1rem; /* Smaller font size for very small screens */
+  }
+
+  .form-group input, .form-group textarea {
+      padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .btn {
+      padding: 8px 16px; /* Adjust button size for smaller screens */
+      font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
 }

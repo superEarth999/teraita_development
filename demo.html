@@ -7,14 +7,65 @@
     <link rel="stylesheet" href="demo.css">
 </head>
 <body>
-    <video autoplay loop muted class="officevideo">
-        <source src="assets/img/office.mp4" type="video/mp4">
-    </video>
-    <div class="content">
-        <h1>Your Software Business Partner</h1>
-        <h2>Let’s work together & build innovative solutions</h2>
-        <a href="#" class="btn">Get Started</a>
-        <a href="#" class="btn">Learn More</a>
+    <header id="header" class="transparent">
+        <div class="contain">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/TeraitaLogoUpdate.png" alt="Teraita Logo" title="logo"></a>
+            </div>
+            <button id="navToggle" class="nav-toggle">☰</button> <!-- Toggle Button -->
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="video-container">
+        <video autoplay loop muted playsinline class="officevideo">
+            <source src="assets/img/office.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Your Software Business Partner</h1>
+            <h2>Let’s work together & build innovative solutions</h2>
+            <a href="#contact" class="btn">Get Started</a>
+            <a href="#home" class="btn">Learn More</a>
+        </div>
     </div>
+    <script>
+        let lastScrollTop = 0;
+        const header = document.getElementById('header');
+        const videoContainer = document.querySelector('.video-container');
+
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            const videoHeight = videoContainer.offsetHeight;
+
+            if (currentScroll > lastScrollTop) {
+                // Downscroll
+                header.style.top = '-80px'; // Adjust this value if needed
+            } else {
+                // Upscroll
+                header.style.top = '0';
+            }
+
+            // Check if the scroll position is past the video height
+            if (currentScroll > videoHeight) {
+                header.classList.remove('transparent');
+                header.classList.add('opaque');
+            } else {
+                header.classList.remove('opaque');
+                header.classList.add('transparent');
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+        }, false);
+    </script>
 </body>
 </html>

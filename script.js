@@ -48,3 +48,23 @@ function openNewTab() {
 }
 
 
+// for header
+
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('header');
+    const videoContainer = document.querySelector('.video-container');
+
+    function checkScroll() {
+        const videoHeight = videoContainer.offsetHeight;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop < videoHeight) {
+            header.classList.add('transparent');
+        } else {
+            header.classList.remove('transparent');
+        }
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Initial check
+});
