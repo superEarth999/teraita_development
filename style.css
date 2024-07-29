@@ -48,6 +48,9 @@
       
       /* Responsive Design */
       @media (max-width: 768px) {
+          .officevideo{
+            display: none;
+          }
           .content {
               width: 90%; /* Increase width on smaller screens */
               padding: 15px;
@@ -56,6 +59,7 @@
       }
       
       @media (max-width: 480px) {
+        
           .content {
               width: 95%; /* Increase width on very small screens */
               padding: 10px;
