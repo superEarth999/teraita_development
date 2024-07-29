@@ -20,8 +20,8 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%); /* Center the content */
     text-align: center;
-    color: #e6ebe4; /* White text color for contrast */
-    /* Semi-transparent background */
+    color: #fff; /* White text color for contrast */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
     z-index: 1; /* Ensure content is above the video */
