@@ -1269,12 +1269,7 @@ nav ul li a:hover {
 /* contact page */
 
 /* General styles for the Contact section */
-.page-section {
-  padding: 40px 20px; /* Padding around the section */
-  position: relative; /* Allows absolute positioning of children if needed */
-  text-align: center; /* Center-align text and elements */
-  color: #fff; /* Text color */
-}
+
 
 /* Background image styling */
 .contact-section {
