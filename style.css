@@ -27,13 +27,13 @@
           transform: translate(-50%, -50%); /* Center the content */
           text-align: center;
           color: #e6ebe4; /* Text color for contrast */
-          background: rgba(24, 23, 23, 0.5);
+          /* background: rgba(24, 23, 23, 0.5); */
           padding: 20px;
           border-radius: 10px;
           z-index: 1; /* Ensure content is above the video */
           width: 80%; /* Responsive width */
           max-width: 600px; /* Maximum width for larger screens */
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+          /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); */
       }
       .content::before {
         content: "";
@@ -134,7 +134,7 @@
             left: 0;
             
             width: 98%;
-            background-color: rgb(8, 8, 8); 
+            background-color: #ffffff; 
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
             z-index: 1000; 
             transition: top 0.3s; 
@@ -180,7 +180,7 @@
         }
         /* logo hover */
         .logo img:hover{
-          border: solid #f8f8f8;
+          border: solid #c1e69f;
           transition: border 0.1s ease;
         }
         
@@ -786,7 +786,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #0a0a0a;
     text-decoration: none;
     font-weight: bold;
     position: relative;
@@ -802,7 +802,7 @@ nav ul li a::after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #f8f8f8; /* Border color */
+  background-color: #a4dd07; /* Border color */
   transition: width 0.3s ease-in-out; /* Transition for smooth effect */
 }
 nav ul li a:hover::after {
@@ -810,7 +810,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-    color: rgb(235, 137, 9);
+    color: rgb(238, 157, 5);
 }
 
 .footer-content {
