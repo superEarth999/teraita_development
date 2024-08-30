@@ -25,6 +25,16 @@ window.addEventListener('scroll', function() {
         header.classList.remove('fixed');
     }
 });
+// const mobile_nav = document.querySelector(".nav-toggle");
+// const headerEle = document.querySelector(".navbar");
+
+// mobile_nav.addEventListener("click", () => {
+//     headerEle.classList.toggle("active");
+// });
+
+// window.onscroll = () =>{
+//     headerEle.classList.remove('active');
+// }
 
 
 document.getElementById('navToggle').addEventListener('click', function() {
